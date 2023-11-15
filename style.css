@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+
+.hide {
+    display: none;
+}
+
+main {
+    background: white;
+    
+    
+    border-radius: .5rem;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+.luckCook1 {
+    width: min(42.8rem, 90%);
+    height: 42.4rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.luckCook1, .luckCook2 {
+    margin: 0 auto;
+}
+
+.luckCook1 img {
+    width: 30rem;
+    height: 20rem;
+    cursor: pointer;
+}
+
+
+
+h1, h2, p {
+    color: #34355B;
+}
+
+h1 {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+}
+
+.luckCook1 p {
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+p, button {
+    font-family: 'DM Sans', 'san-serif';
+}
+
+
+.luckCook2 {
+    background: white;
+    height: 56.4rem;
+    width: 42.8rem;
+    text-align: center;
+    padding: 4.8rem 6.4rem;
+
+}
+
+.luckCook2 img {
+    width: 30rem;
+    height: 20rem;
+    
+    
+}
+
+.luckCook2 h2{
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-bottom: 1.7rem;
+}
+
+.luckCook2 p {
+    font-family: 'Dancing Script', 'sans-serif';
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.luckCook2 button {
+    padding: 16px;
+    background: #FF9500;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: .4rem;  
+    cursor: pointer;  
+}
+
+.hide-p {
+    display: none;
+}
+
+.luckbox {
+    display: flex;
+    padding: 48px 64px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+}
+
+
+.cookAnimation1 {
+	    -webkit-animation: cookAnimation1 0.3s linear infinite both;
+	    animation: cookAnimation1 0.3s linear infinite both;
+}
+
+
+ @-webkit-keyframes cookAnimation1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    40% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    60% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes cookAnimation1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    40% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    60% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  
+
+
+  .luckbox {
+	-webkit-animation: luckbox 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: luckbox 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+ @-webkit-keyframes luckbox {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+              transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+              transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes luckbox {
+    0% {
+      -webkit-transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+              transform: rotateY(30deg) translateY(300px) skewY(-30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+              transform: rotateY(0deg) translateY(0) skewY(0deg);
+      opacity: 1;
+    }
+  }
+  
